@@ -5,10 +5,10 @@
 				<nuxt-link active-class="highlighted" exact to="/"> Home </nuxt-link>
 			</li>
 			<li>
-				<nuxt-link active-class="highlighted" to="aboutPage"> About </nuxt-link>
+				<nuxt-link active-class="highlighted" to="/aboutPage"> About </nuxt-link>
 			</li>
 			<li>
-				<nuxt-link  active-class="highlighted" to="news"> news </nuxt-link>
+				<nuxt-link  active-class="highlighted" to="/news"> news </nuxt-link>
 			</li>
 		</ul>
 	</div>
@@ -16,7 +16,7 @@
 
 <script>
 export default {
-  name: 'navigation-bar'
+  name: 'NavigationBar'
 }
 </script>
 

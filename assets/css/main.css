@@ -1,0 +1,13 @@
+:root{
+    --main-color: hsl(120, 58%, 55%);
+    --second-color: hsl(120, 100%, 92%);
+    --third-color: yellow;
+    --backround-color: hsl(120, 100%, 85%);
+    --text-color: black;
+    --text-second-color: black;
+
+}
+body{
+    margin: 2vmin;
+    background-color: var(--backround-color);
+}

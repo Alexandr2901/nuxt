@@ -1,12 +1,19 @@
 const state = () => ({
     // token: null,
+    filters: null,
     news: null
 })
 
 const getters = {
     // hasToken: state => !!state.token
+    filters: s => s.filters
+
 }
 const mutations = {
+    setFilters(state, data) {
+        state.filters = data
+        // console.log(state.filters);
+    },
     // setToken(state, token) {
     //     state.token = token
     // },
@@ -16,12 +23,13 @@ const mutations = {
 }
 
 const actions = {
-    nuxtServerInit({ dispatch }) {
-        // dispatch('getNews')
+    async nuxtServerInit({ dispatch }) {
+        await dispatch('getNewsFilters')
     },
-    async getNews() {
-        const data = await this.$axios.$get('news')
-        console.log(data);
+    async getNewsFilters({ commit }) {
+        const data = await this.$axios.$get('news/filters')
+        commit('setFilters', data)
+        // console.log(data);
     },
     // async fetch({ commit }) {
     //     const users = await this.$axios.$get('https://jsonplaceholder.typicode.com/users')

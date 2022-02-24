@@ -23,7 +23,7 @@ const mutations = {
 
 const actions = {
   async nuxtServerInit({ dispatch }) {
-    await dispatch('getNewsFilters')
+    // await dispatch('getNewsFilters')
   },
   async getNewsFilters({ commit }) {
     const data = await this.$axios.$get('news/filters')

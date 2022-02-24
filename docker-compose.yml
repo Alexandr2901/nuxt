@@ -5,7 +5,7 @@ services:
     container_name: nuxt
     build:
       context: .
-      dockerfile: Dockerfile
+#      dockerfile: Dockerfile
       target: 'develop-stage'
     ports:
       - '3000:3000'
@@ -13,5 +13,5 @@ services:
       - '.:/app'
       - '/app/node_modules/'
     command: ['npm', 'run', 'dev']
-    environment:
-      - CHOKIDAR_USEPOLLING=true
+#    environment:
+#      - CHOKIDAR_USEPOLLING=true

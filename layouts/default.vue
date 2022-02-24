@@ -13,15 +13,15 @@
 import Navbar from '@/components/navigation-bar'
 export default {
   components: {
-    Navbar
-  }
+    Navbar,
+  },
 }
 </script>
 
 <style>
 main {
   background-color: var(--main-color);
-      padding: 1rem;
-      border-radius: 1rem;
+  padding: 1rem;
+  border-radius: 1rem;
 }
 </style>

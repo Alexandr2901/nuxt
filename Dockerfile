@@ -11,7 +11,7 @@ COPY . .
 FROM develop-stage as build-stage
 RUN npm run build
 
-# этап production (production-stage) h
+# этап production (production-stage)
 FROM build-stage as production-stage
 EXPOSE 3000
 CMD ["npm", "run", "start"]

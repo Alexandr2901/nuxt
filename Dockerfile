@@ -6,7 +6,7 @@ COPY package*.json ./
 RUN npm install
 COPY . .
 #RUN npm run serve
-#7
+#8
 # этап сборки (build stage)
 FROM develop-stage as build-stage
 RUN npm run build
